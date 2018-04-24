@@ -11,23 +11,23 @@ const Ground = () => {
   };
 
   return (
-    <g id = 'ground'>
+    <g id="ground">
       <rect
-        id = 'ground-2'
-        data-name = 'ground'
-        style = { groundStyle }
-        x = { skyAndGroundWidth / -2 }
-        y = { 0 }
-        width = {skyAndGroundWidth }
-        height = { 100 }
+        id="ground-2"
+        data-name="ground"
+        style={groundStyle}
+        x={skyAndGroundWidth / -2}
+        y={0}
+        width={skyAndGroundWidth}
+        height={100}
       />
-    <line
-      x1 = { skyAndGroundWidth / -2 }
-      y1 = { 0 }
-      x2 = { skyAndGroundWidth / 2 }
-      y2 = { 0 }
-      style = { division }
-    />
+      <line
+        x1={skyAndGroundWidth / -2}
+        y1={0}
+        x2={skyAndGroundWidth / 2}
+        y2={0}
+        style={division}
+      />
     </g>
   );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { pathFromBezierCurve } from '../utils/formula';
+import { pathFromBezierCurve } from '../utils/formulas';
 
 const CannonBase = (props) => {
   const cannonBaseStyle = {
@@ -35,15 +35,15 @@ const CannonBase = (props) => {
   return (
     <g>
       <path
-        style = { cannonBaseStyle }
-        d = { pathFromBezierCurve(cubicBezierCurve) }
+        style={cannonBaseStyle}
+        d={pathFromBezierCurve(cubicBezierCurve)}
       />
       <line
-        x1 = { -halfBase }
-        y1 = { height }
-        x2 = {halfBase }
-        y2 = { height }
-        style = { cannonBaseStyle }
+        x1={-halfBase}
+        y1={height}
+        x2={halfBase}
+        y2={height}
+        style={cannonBaseStyle}
       />
     </g>
   );
